@@ -1,0 +1,157 @@
+.dashboard {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.dashboard .dashboard-group-wrapper {
+  height: 2148px;
+  width: 1440px;
+}
+
+.dashboard .dashboard-group {
+  height: 2148px;
+  position: relative;
+}
+
+.dashboard .dashboard-section {
+  height: 2148px;
+  left: 979px;
+  position: absolute;
+  top: 1364px;
+  width: 1440px;
+}
+
+.box {
+  height: 2148px;
+  width: 1440px;
+}
+
+.box .head-group {
+  height: 2148px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 1440px;
+}
+
+.box .image {
+  background-color: #e4edff;
+  height: 2148px;
+}
+
+.box .overlap {
+  height: 639px;
+  position: relative;
+  width: 1440px;
+}
+
+.box .clothing-rack {
+  height: 623px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1440px;
+}
+
+.box .head-fade {
+  height: 110px;
+  left: 0;
+  position: absolute;
+  top: 529px;
+  width: 1440px;
+}
+
+.box .overlap-group {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 44.9%, rgb(255, 255, 255) 100%);
+  border-radius: 63px;
+  height: 140px;
+  position: relative;
+  top: -52px;
+}
+
+.box .navbar {
+  height: 60px;
+  left: 62px;
+  position: relative;
+  top: 63px;
+  width: 1378px;
+}
+
+.box .nav-tabs {
+  height: 40px;
+  left: 0;
+  position: absolute;
+  top: 20px;
+  width: 1312px;
+}
+
+.box .text-wrapper {
+  color: #3b281d;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 32px;
+  font-weight: 400;
+  left: 861px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 1px;
+  width: 119px;
+}
+
+.box .div {
+  color: #3b281d;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 32px;
+  font-weight: 400;
+  left: 1116px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 188px;
+}
+
+.box .text-wrapper-2 {
+  color: #3b281d;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 32px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 1px;
+  width: 119px;
+}
+
+.box .text-wrapper-3 {
+  color: #3b281d;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 32px;
+  font-weight: 400;
+  left: 309px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 161px;
+}
+
+.box .rectangle {
+  -webkit-backdrop-filter: blur(4px) brightness(100%);
+  backdrop-filter: blur(4px) brightness(100%);
+  height: 5px;
+  left: 433px;
+  mix-blend-mode: multiply;
+  position: absolute;
+  top: 0;
+  width: 945px;
+}
