@@ -1,0 +1,217 @@
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
+
+
+/* src/App.css */
+:root {
+  --blur-dark-lg: ;
+  --blur-dark-md: ;
+  --blur-dark-sm: ;
+  --blur-dark-xl: ;
+  --blur-light-lg: ;
+  --blur-light-md: ;
+  --blur-light-sm: ;
+  --blur-light-xl: ;
+  --desktop-body-bold-font-family: "Inter-Bold", Helvetica;
+  --desktop-body-bold-font-size: 14px;
+  --desktop-body-bold-font-style: normal;
+  --desktop-body-bold-font-weight: 700;
+  --desktop-body-bold-letter-spacing: 0px;
+  --desktop-body-bold-line-height: 150%;
+  --desktop-body-medium-font-family: "Inter-Medium", Helvetica;
+  --desktop-body-medium-font-size: 14px;
+  --desktop-body-medium-font-style: normal;
+  --desktop-body-medium-font-weight: 500;
+  --desktop-body-medium-letter-spacing: 0px;
+  --desktop-body-medium-line-height: 150%;
+  --desktop-body-regular-font-family: "Inter-Regular", Helvetica;
+  --desktop-body-regular-font-size: 14px;
+  --desktop-body-regular-font-style: normal;
+  --desktop-body-regular-font-weight: 400;
+  --desktop-body-regular-letter-spacing: 0px;
+  --desktop-body-regular-line-height: 150%;
+  --desktop-body-semibold-font-family: "Inter-SemiBold", Helvetica;
+  --desktop-body-semibold-font-size: 14px;
+  --desktop-body-semibold-font-style: normal;
+  --desktop-body-semibold-font-weight: 600;
+  --desktop-body-semibold-letter-spacing: 0px;
+  --desktop-body-semibold-line-height: 150%;
+  --desktop-caption-1-bold-font-family: "Inter-Bold", Helvetica;
+  --desktop-caption-1-bold-font-size: 12px;
+  --desktop-caption-1-bold-font-style: normal;
+  --desktop-caption-1-bold-font-weight: 700;
+  --desktop-caption-1-bold-letter-spacing: 0px;
+  --desktop-caption-1-bold-line-height: 150%;
+  --desktop-caption-1-medium-font-family: "Inter-Medium", Helvetica;
+  --desktop-caption-1-medium-font-size: 12px;
+  --desktop-caption-1-medium-font-style: normal;
+  --desktop-caption-1-medium-font-weight: 500;
+  --desktop-caption-1-medium-letter-spacing: 0px;
+  --desktop-caption-1-medium-line-height: 150%;
+  --desktop-caption-1-regular-font-family: "Inter-Regular", Helvetica;
+  --desktop-caption-1-regular-font-size: 12px;
+  --desktop-caption-1-regular-font-style: normal;
+  --desktop-caption-1-regular-font-weight: 400;
+  --desktop-caption-1-regular-letter-spacing: 0px;
+  --desktop-caption-1-regular-line-height: 150%;
+  --desktop-caption-1-semibold-font-family: "Inter-SemiBold", Helvetica;
+  --desktop-caption-1-semibold-font-size: 12px;
+  --desktop-caption-1-semibold-font-style: normal;
+  --desktop-caption-1-semibold-font-weight: 600;
+  --desktop-caption-1-semibold-letter-spacing: 0px;
+  --desktop-caption-1-semibold-line-height: 150%;
+  --desktop-caption-2-bold-font-family: "Inter-Bold", Helvetica;
+  --desktop-caption-2-bold-font-size: 10px;
+  --desktop-caption-2-bold-font-style: normal;
+  --desktop-caption-2-bold-font-weight: 700;
+  --desktop-caption-2-bold-letter-spacing: 0px;
+  --desktop-caption-2-bold-line-height: 150%;
+  --desktop-caption-2-medium-font-family: "Inter-Medium", Helvetica;
+  --desktop-caption-2-medium-font-size: 10px;
+  --desktop-caption-2-medium-font-style: normal;
+  --desktop-caption-2-medium-font-weight: 500;
+  --desktop-caption-2-medium-letter-spacing: 0px;
+  --desktop-caption-2-medium-line-height: 150%;
+  --desktop-caption-2-regular-font-family: "Inter-Regular", Helvetica;
+  --desktop-caption-2-regular-font-size: 10px;
+  --desktop-caption-2-regular-font-style: normal;
+  --desktop-caption-2-regular-font-weight: 400;
+  --desktop-caption-2-regular-letter-spacing: 0px;
+  --desktop-caption-2-regular-line-height: 150%;
+  --desktop-caption-2-semibold-font-family: "Inter-SemiBold", Helvetica;
+  --desktop-caption-2-semibold-font-size: 10px;
+  --desktop-caption-2-semibold-font-style: normal;
+  --desktop-caption-2-semibold-font-weight: 600;
+  --desktop-caption-2-semibold-letter-spacing: 0px;
+  --desktop-caption-2-semibold-line-height: 150%;
+  --foundationdanger-1: rgba(255, 242, 242, 1);
+  --foundationdanger-2: rgba(235, 66, 69, 1);
+  --foundationdanger-3: rgba(219, 31, 34, 1);
+  --foundationneutral-0: rgba(255, 255, 255, 1);
+  --foundationneutral-100: rgba(244, 244, 244, 1);
+  --foundationneutral-200: rgba(233, 233, 233, 1);
+  --foundationneutral-300: rgba(166, 166, 166, 1);
+  --foundationneutral-400: rgba(143, 143, 143, 1);
+  --foundationneutral-500: rgba(99, 99, 99, 1);
+  --foundationneutral-600: rgba(77, 77, 77, 1);
+  --foundationneutral-700: rgba(54, 54, 54, 1);
+  --foundationneutral-800: rgba(43, 43, 43, 1);
+  --foundationneutral-900: rgba(32, 32, 32, 1);
+  --foundationoverlayblack-sm: rgba(32, 32, 32, 0.6);
+  --foundationoverlaywhite-sm: rgba(235, 235, 235, 0.2);
+  --foundationprimary-100: rgba(213, 224, 249, 1);
+  --foundationprimary-200: rgba(171, 193, 244, 1);
+  --foundationprimary-300: rgba(129, 162, 238, 1);
+  --foundationprimary-400: rgba(87, 131, 233, 1);
+  --foundationprimary-50: rgba(244, 247, 254, 1);
+  --foundationprimary-600: rgba(36, 80, 182, 1);
+  --foundationprimary-700: rgba(27, 60, 136, 1);
+  --foundationprimary-800: rgba(18, 40, 91, 1);
+  --foundationprimary-900: rgba(9, 20, 45, 1);
+  --foundationprimary500-main: rgba(45, 100, 227, 1);
+  --foundationsuccess-1: rgba(232, 255, 242, 1);
+  --foundationsuccess-2: rgba(93, 190, 137, 1);
+  --foundationsuccess-3: rgba(56, 165, 105, 1);
+  --foundationwarning-1: rgba(251, 242, 203, 1);
+  --foundationwarning-2: rgba(255, 213, 115, 1);
+  --foundationwarning-3: rgba(248, 188, 48, 1);
+  --shadow-2xl: 0px 24px 48px -12px rgba(16, 24, 40, 0.25);
+  --shadow-3xl: 0px 32px 64px -12px rgba(16, 24, 40, 0.2);
+  --shadow-lg: 0px 4px 6px -2px rgba(16, 24, 40, 0.05), 0px 12px 16px -4px rgba(16, 24, 40, 0.1);
+  --shadow-md: 0px 2px 4px -2px rgba(16, 24, 40, 0.06), 0px 4px 8px -2px rgba(16, 24, 40, 0.1);
+  --shadow-sm: 0px 1px 2px 0px rgba(16, 24, 40, 0.06), 0px 1px 3px 0px rgba(16, 24, 40, 0.1);
+  --shadow-xl: 0px 8px 8px -4px rgba(16, 24, 40, 0.04), 0px 20px 24px -4px rgba(16, 24, 40, 0.1);
+  --shadow-xs: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 1rem;
+  color: #fff;
+}
+
+main {
+  padding: 2rem;
+  text-align: center;
+}
