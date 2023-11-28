@@ -8,16 +8,18 @@ import os
 from tqdm import tqdm
 import pickle
 
-model = ResNet50(weights="imagenet", include_top=False, input_shape=(224, 224, 3))
+model = ResNet50(weights="imagenet", include_top=False,
+                 input_shape=(224, 224, 3))
 model.trainable = False
 
 model = Sequential([model, GlobalMaxPooling2D()])
-#model.summary()
+# model.summary()
 
-def extract_features(img_path,model):
-    img = image.load_img(img_path,target_size=(224,224))
+
+def extract_features(img_path, model):
+    img = image.load_img(img_path, target_size=(224, 224))
     img_array = image.img_to_array(img)
-    expand_img = np.expand_dims(img_array,axis=0)
+    expand_img = np.expand_dims(img_array, axis=0)
     preprocessed_img = preprocess_input(expand_img)
     result_to_resnet = model.predict(preprocessed_img)
     flatten_result = result_to_resnet.flatten()
@@ -25,7 +27,9 @@ def extract_features(img_path,model):
     result_normlized = flatten_result / norm(flatten_result)
 
     return result_normlized
-#print(os.listdir('fashion_small/images'))
+
+
+# print(os.listdir('fashion_small/images'))
 img_files = []
 
 for fashion_images in os.listdir('fashion_small/images'):

@@ -22,9 +22,9 @@ model = ResNet50(weights="imagenet", include_top=False,
 model.trainable = False
 model = Sequential([model, GlobalMaxPooling2D()])
 st.set_page_config(page_title="RevampStyle",
-                   page_icon=":smiley:", layout="wide")
+                   page_icon="\U0001F9E2", layout="wide")
 
-st.title('Fashion Recommendation System')
+st.title('Smart Fashion Recommendation System')
 
 
 def save_file(uploaded_file):
