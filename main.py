@@ -110,27 +110,27 @@ def get_save_file(file):
 
         with col1:
             st.header("I")
-            st.image(img_files_list[img_indicess[0][0]])
+            st.image(img_files_list[img_indicess[0][0]].replace("\\", "/"))
             image_details(csv_file_path, img_files_list[img_indicess[0][0]])
 
         with col2:
             st.header("II")
-            st.image(img_files_list[img_indicess[0][1]])
+            st.image(img_files_list[img_indicess[0][1]].replace("\\", "/"))
             image_details(csv_file_path, img_files_list[img_indicess[0][1]])
 
         with col3:
             st.header("III")
-            st.image(img_files_list[img_indicess[0][2]])
+            st.image(img_files_list[img_indicess[0][2]].replace("\\", "/"))
             image_details(csv_file_path, img_files_list[img_indicess[0][2]])
 
         with col4:
             st.header("IV")
-            st.image(img_files_list[img_indicess[0][3]])
+            st.image(img_files_list[img_indicess[0][3]].replace("\\", "/"))
             image_details(csv_file_path, img_files_list[img_indicess[0][3]])
 
         with col5:
             st.header("V")
-            st.image(img_files_list[img_indicess[0][4]])
+            st.image(img_files_list[img_indicess[0][4]].replace("\\", "/"))
             image_details(csv_file_path, img_files_list[img_indicess[0][4]])
     else:
         st.header("Some error occur")
