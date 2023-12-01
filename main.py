@@ -14,6 +14,8 @@ import os
 import re
 import time
 
+@st.cache_data(ttl=60)
+
 features_list = pickle.load(open("image_features_embedding.pkl", "rb"))
 img_files_list = pickle.load(open("img_files.pkl", "rb"))
 csv_file_path = 'fashion_small/styles.csv'
