@@ -16,7 +16,7 @@ import time
 
 features_list = pickle.load(open("image_features_embedding.pkl", "rb"))
 img_files_list = pickle.load(open("img_files.pkl", "rb"))
-csv_file_path = 'fashion_small/myntra_dataset/styles.csv'
+csv_file_path = "fashion_small/myntra_dataset/styles.csv"
 
 model = ResNet50(weights="imagenet", include_top=False,
                  input_shape=(224, 224, 3))
