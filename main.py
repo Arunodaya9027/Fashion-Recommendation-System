@@ -16,7 +16,7 @@ import time
 
 features_list = pickle.load(open("image_features_embedding.pkl", "rb"))
 img_files_list = pickle.load(open("img_files.pkl", "rb"))
-csv_file_path = 'fashion_small/styles.csv'
+csv_file_path = 'fashion_small/myntra_dataset/styles.csv'
 
 model = ResNet50(weights="imagenet", include_top=False,
                  input_shape=(224, 224, 3))
@@ -74,12 +74,18 @@ def image_details(csv_file_path, file_path):
     result_df = df[df['id'] == id]
     total_columns = result_df.shape[1]
 
+    # other, col3 = st.columns([3, 7])
     # Check if any rows match the condition
     if not result_df.empty:
         # Print the details or return them as needed
         for i in range(1, total_columns):
-            st.write(
-                str(result_df.columns[i]) + " : " + str(result_df.iloc[0].iloc[i]))
+            string = str(result_df.iloc[0].iloc[i])
+            if string.replace(".", "").isnumeric():
+                st.write(
+                    str(result_df.columns[i]) + " : " + str(int(result_df.iloc[0].iloc[i])))
+            else:
+                st.write(
+                    str(result_df.columns[i]) + " : " + str(result_df.iloc[0].iloc[i]))
         # If you want to return the details as a dictionary:
         # return result_df.to_dict(orient='records')
     else:
@@ -93,7 +99,7 @@ def get_save_file(file):
         size = (400, 400)
         resized_im = show_images.resize(size)
 
-        im_left, im_center, im_right = st.columns([4, 8, 4])
+        im_left, im_center, im_right = st.columns([6, 8, 3])
         # Center an image using CSS
         # st.markdown(
         #     f"<div style='display: flex; justify-content: center; align-items: center;'><img src='{st.image.image_to_url(resized_im)}' alt='centered image'></div>",
@@ -101,37 +107,133 @@ def get_save_file(file):
         # )
         im_center.image(resized_im)
         # extract features of uploaded image
-        im_center.header("Recommended Images")
+        im_center.header(" ")
+        im_center.header("Recommended Products")
+        st.header(" ")
         features = extract_img_features(os.path.join(
             "uploader", file.name), model)
         # st.text(features)
         img_indicess = recommendd(features, features_list)
-        col1, col2, col3, col4, col5 = st.columns(5)
+
+        col1, col2, col2_space, col3 = st.columns([1, 2, 1, 6])
 
         with col1:
+            st.header(" ")
+            st.header(" ")
             st.header("I")
-            st.image(img_files_list[img_indicess[0][0]])
-            image_details(csv_file_path, img_files_list[img_indicess[0][0]])
+            st.write(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header("II")
+            st.write(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header("III")
+            st.write(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header("IV")
+            st.write(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header("V")
 
         with col2:
-            st.header("II")
-            st.image(img_files_list[img_indicess[0][1]])
-            image_details(csv_file_path, img_files_list[img_indicess[0][1]])
+            st.header(" ")
+            st.image(Image.open(img_files_list[img_indicess[0][0]].replace(
+                "\\", "/")).resize((200, 200)))
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.image(Image.open(img_files_list[img_indicess[0][1]].replace(
+                "\\", "/")).resize((200, 200)))
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.image(Image.open(img_files_list[img_indicess[0][2]].replace(
+                "\\", "/")).resize((200, 200)))
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.image(Image.open(img_files_list[img_indicess[0][3]].replace(
+                "\\", "/")).resize((200, 200)))
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.header(" ")
+            st.image(Image.open(img_files_list[img_indicess[0][4]].replace(
+                "\\", "/")).resize((200, 200)))
 
         with col3:
-            st.header("III")
-            st.image(img_files_list[img_indicess[0][2]])
+            image_details(csv_file_path, img_files_list[img_indicess[0][0]])
+            st.write(" ")
+            st.header(" ")
+            st.write(" ")
+            image_details(csv_file_path, img_files_list[img_indicess[0][1]])
+            st.write(" ")
+            st.header(" ")
+            st.write(" ")
             image_details(csv_file_path, img_files_list[img_indicess[0][2]])
-
-        with col4:
-            st.header("IV")
-            st.image(img_files_list[img_indicess[0][3]])
+            st.write(" ")
+            st.header(" ")
+            st.write(" ")
             image_details(csv_file_path, img_files_list[img_indicess[0][3]])
-
-        with col5:
-            st.header("V")
-            st.image(img_files_list[img_indicess[0][4]])
+            st.write(" ")
+            st.header(" ")
+            st.write(" ")
             image_details(csv_file_path, img_files_list[img_indicess[0][4]])
+            st.write(" ")
+            st.header(" ")
+            st.write(" ")
     else:
         st.header("Some error occur")
 

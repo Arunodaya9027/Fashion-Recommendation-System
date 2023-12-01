@@ -9,3 +9,4 @@ opencv-python
 plotly
 scipy
 click
+psrecord
