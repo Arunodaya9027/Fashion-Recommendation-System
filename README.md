@@ -115,7 +115,7 @@ To run the web server, simply execute streamlit with the main recommender app:
 streamlit run main.py
 ```
 
-On any problem, delete the img_embeddings.py and img_features.py file and run the app.py file again.
+On any problem, delete the img_features_embedding.pkl and img_files.pkl file and run the app.py file again.
 
 ## Built With
 
