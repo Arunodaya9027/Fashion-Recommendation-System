@@ -88,6 +88,17 @@ show a great accuracy of the model with low error, loss and good f-score.
 
 ![Alt text](https://github.com/sonu275981/Clothing-recommender-system/blob/1e51a0d1db0e171e8d496524aa95a0098241fb1b/Demo/2021-11-25%20(3).png?raw=true "Face-Recognition-Attendance-System")
 
+## Virtual Environment Setup
+
+Use the terminal to create and activate a virtual environment. Use venv to install the requirements.
+
+~~~bash
+python -m venv venv
+
+source venv/bin/activate  # On Linux/Mac
+.\venv\Scripts\activate  # On Windows
+~~~
+
 ## Installation
 
 Use pip to install the requirements.
@@ -103,6 +114,8 @@ To run the web server, simply execute streamlit with the main recommender app:
 ```bash
 streamlit run main.py
 ```
+
+On any problem, delete the img_embeddings.py and img_features.py file and run the app.py file again.
 
 ## Built With
 
